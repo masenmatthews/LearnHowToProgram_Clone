@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :tracks do
     resources :sections do
-      resources :lessons 
+      resources :lessons
     end
   end
 end

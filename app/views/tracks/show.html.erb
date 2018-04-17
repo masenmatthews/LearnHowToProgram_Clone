@@ -1,4 +1,7 @@
 <!-- <% content_for(:title, "List | To Do") %> -->
+<div class="navbar">
+  <%= link_to "Courses", tracks_path %>
+</div>
 
 <h1><%= @track.name %></h1>
 
@@ -20,3 +23,8 @@
       <% end %>
     </ul>
   <% end %>
+
+section1 = Section.new
+section1.name = "Angular Extended"
+section1.track_id = 3
+section1.save

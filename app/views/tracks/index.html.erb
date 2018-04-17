@@ -1,7 +1,13 @@
-<h1>Courses</h1>
+<div class="navbar">
+  <%= link_to "Courses", tracks_path %>
+</div>
 
-<ul>
-  <% @tracks.each do |track| %>
-    <li><%= link_to track.name, track_path(track) %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h1>Courses</h1>
+
+  <ul>
+    <% @tracks.each do |track| %>
+      <li><%= link_to track.name, track_path(track) %></li>
+    <% end %>
+  </ul>
+</div>

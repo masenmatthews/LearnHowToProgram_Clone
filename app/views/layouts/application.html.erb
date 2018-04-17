@@ -2,9 +2,6 @@
 <html>
   <head>
     <title><%= yield(:title) %></title>
-    <% content_for(:navbar) do %>
-      <li><a href="courses">Courses</a></li>
-    <% end %>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
