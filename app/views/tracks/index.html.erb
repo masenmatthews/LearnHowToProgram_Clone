@@ -1,0 +1,11 @@
+<h1>Courses</h1>
+
+<ul>
+  <% @tracks.each do |tracks| %>
+    <li><%= link_to track.name, track_path(track) %></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<%= link_to "New Track", new_track_path %>

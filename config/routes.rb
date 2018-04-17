@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # root :to => 'lists#index' (intro lesson one or something)
+
+  resources :tracks do
+    resources :sections do
+      resources :lessons 
+    end
+  end
 end
